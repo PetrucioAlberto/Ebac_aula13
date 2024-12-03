@@ -1,0 +1,15 @@
+** Procedimento para instalar e rodar o newman
+
+
+1. **Instalar o Newman**
+   - Execute o comando: `npm install -g newman`
+
+2. ** para gerar um relatorio simples direto no terminal
+    - newman run "arquivo json do postman" -e "Variavel de ambiente do propio arquivo"
+
+
+3. **Instalar o Reporter `htmlextra`**
+   - Execute o comando: `npm install -g newman-reporter-htmlextra`
+
+4. **Rodar um relatorio HTML `htmlextra`**
+   newman run "arquivo json do postman" -e "Variavel de ambiente do propio arquivo" --reporters htmlextra --reporter-htmlextra-export "relatorio.html"
